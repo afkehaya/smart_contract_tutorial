@@ -10,6 +10,8 @@ What we're going to build:
 
 We're building a smart contract that allows the contract creator to deposit money that can only be released when the contract owner sets a boolean value to TRUE.
 
+We will use Remix to write and test our contract. Then, we'll use Truffle to build a front end that allows us to connect our smart contract to a UI and the blockchain. 
+
 First we have to set the pragma line. This lets the compiler know what version we are running.
 
       pragma solidity ^0.4.19;
@@ -92,11 +94,12 @@ This is just a function so that we can verify that the boolean was changed from 
        return myBool;
       }
 
-   }
+    }
+    
+# end smart contract and Remix section
 
+# How to work with Truffle:
 NOTE: This section is not complete as of May 22 2018. I'm working on finishing it so that you can learn how to connect your smart contract to the ethereum blockchain and deploy a UI for your dapp
-
-How to work with Truffle:
 
 Truffle is the most popular developer framework for building Dapps on Ethereum
 Go ahead and type the following command to install it from your command line.
