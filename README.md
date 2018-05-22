@@ -1,4 +1,4 @@
-smart_contract_tutorial
+# smart_contract_tutorial
 
  NOTE: This tutorial is still being built. The first section, building your first smart contract in solidity is complete. 
  I'm still working on the sections using Truffle to build the front end of your Dapp that will talk to the Ethereum blockchain. 
@@ -66,10 +66,10 @@ In this example, we're using "require" instead of an if statement
 It checks to make sure that person trying to change the boolean is the contract owner
 You could also use the word "assert", However, be careful assert will cause any gas spent to be used where as require will just return the gas back to the user.
 
- function setMyBoolean(bool myBoolArgument) public {
+    function setMyBoolean(bool myBoolArgument) public {
      require(msg.sender == myAddress);
      myBool = myBoolArgument;
-  }
+    }
 
 This function allows the second account to withdraw Ether from the smart contract only if the boolean value is set to true
 The function must be public so that it can be called
@@ -157,11 +157,11 @@ Hang tight, it may take a minute
 
  Now we are ready to interact with the truffle contract library
 
- You can find this file in app/javascripts/app.js file. Go ethereum
+ You can find this file in app/javascripts/app.js file. 
 
  Change line nine to
 
-import metacoin_artifacts from '../../build/contracts/MyContract.json'
+     import metacoin_artifacts from '../../build/contracts/MyContract.json'
 
  This imports the artifact (that JSON file that we compiled our contract to)
 
